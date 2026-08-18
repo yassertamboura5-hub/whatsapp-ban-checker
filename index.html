@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Ban Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>🔍 WhatsApp Ban Checker</h1>
+                <p>Vérifiez si un numéro WhatsApp est banni</p>
+            </div>
+
+            <form id="checkerForm" class="form">
+                <div class="form-group">
+                    <label for="phoneNumber">Numéro de téléphone:</label>
+                    <input 
+                        type="tel" 
+                        id="phoneNumber" 
+                        placeholder="Ex: +212612345678" 
+                        required
+                    >
+                    <small>Format: +[code_pays][numéro]</small>
+                </div>
+                <button type="submit" class="btn-check">Vérifier</button>
+            </form>
+
+            <div id="result" class="result hidden">
+                <div id="resultContent"></div>
+            </div>
+
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Vérification en cours...</p>
+            </div>
+
+            <div class="info-box">
+                <h3>ℹ️ Comment ça marche ?</h3>
+                <ul>
+                    <li>Entrez un numéro WhatsApp au format international</li>
+                    <li>Le système vérife si le numéro est valide</li>
+                    <li>Affiche le statut: ✅ Actif ou ❌ Banni</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 WhatsApp Ban Checker | Développé avec ❤️</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
